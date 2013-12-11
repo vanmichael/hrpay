@@ -1,1 +1,9 @@
 <p>List your sales here</p>
+
+<% @employee_sales.each do |sale| %>
+	<ul>
+		<li class=<%="#{sale[0][:first_name]}#{sale[0][:last_name]}"%>><%= "Name: #{sale[0][:first_name]} #{sale[0][:last_name]}" %></li>
+		<li><%= "Amount: $#{sale[0][:amount]}" %></li>
+		<strong><%= "Commission: #{sale[0][:commission]}" if sale[0][:commission] != nil %></strong>
+	</ul>
+<% end %>

@@ -1,1 +1,10 @@
 <p>List your employees here</p>
+
+	<% @employees.each do |employee| %>
+			<ul class=<%= employee.class.to_s.downcase %>>
+				<li class=name><%= "Name: #{employee.first_name} #{employee.last_name}" %></li>
+				<li><%= "Title: #{employee.class}" %></li>
+				<li><%= "Gross Salary: #{employee.gross_salary_per_month}" %></li>
+				<li><%= "Net Pay: #{employee.net_pay_per_month}" %></li>
+			</ul>
+	<% end %>

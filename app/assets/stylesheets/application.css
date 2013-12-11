@@ -11,3 +11,17 @@
  *= require_self
  *= require_tree .
  */
+
+.owner .name{
+	font-weight: bold;
+	background-color:yellow;
+}
+
+.quotasalesperson .name, .commissionsalesperson .name {
+	font-weight: bold;
+	color:green;
+}
+
+.RickyBobby {
+	background-color:yellow;
+}
